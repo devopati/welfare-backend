@@ -11,6 +11,14 @@ const MembersSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  profileImage: {
+    type: Object,
+    default: {
+      imageUrl:
+        "https://res.cloudinary.com/df23q280l/image/upload/v1712474379/kadczmfylyf9iwisszik.png",
+      id: "kadczmfylyf9iwisszik",
+    },
+  },
   is_admin: {
     type: Boolean,
     default: false,
